@@ -3,12 +3,12 @@ public abstract class Monster implements Creature{
     private int hp;
     private char suffix;
     public Monster(String name,char suffix,int hp){
-        if (hp < 0) {     // ここで引数をチェック
+        if (hp <= 0) {
             throw new IllegalArgumentException("初期設定に誤りがあるため、キャラクターを作成できませんでした");
         }
         this.name = name;
         this.suffix = suffix;
-        setHp(hp);
+        this.hp = hp;
     }
 
 
@@ -22,7 +22,12 @@ public abstract class Monster implements Creature{
         return hp;
     }
     public void setHp(int hp) {
-        this.hp = hp;
+        if (hp <= 0) {
+            this.hp = 0;
+        }else{
+            this.hp = hp;
+        }
+
     }
     public final boolean isAlive(){
         if(hp>0){
