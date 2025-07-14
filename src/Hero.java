@@ -5,11 +5,12 @@ public class Hero extends Character{
         setWeapon(weapon);
     }
 
-    public void attack(Creature target) {
+   public void attack(Creature target) {
         System.out.println(this.getName() + "は" + weapon+ "で攻撃!" + target.getName() + "に10のダメージを与えた!");
         target.setHp(target.getHp() - 10);
 
     }
+
     public String getWeapon(){
         return weapon;
     }
