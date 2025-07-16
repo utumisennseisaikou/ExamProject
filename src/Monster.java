@@ -18,7 +18,7 @@ public abstract class Monster implements Creature{
         }
     }
     public void showStatus(){
-        System.out.println(this.getName()+this.suffix +": HP"+this.getHp());
+        System.out.println(this.getName()+this.suffix +":HP "+this.getHp());
     }
 
     public String getName(){
