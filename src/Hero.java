@@ -2,7 +2,7 @@ public class Hero extends Character{
     private String weapon;
     Hero(String name,int hp,String weapon){
         super(name,hp);
-        setWeapon(weapon);
+        this.weapon = weapon;
     }
 
    public void attack(Creature target) {
@@ -13,8 +13,5 @@ public class Hero extends Character{
 
     public String getWeapon(){
         return weapon;
-    }
-    public void setWeapon(String weapon){
-        this.weapon = weapon;
     }
 }

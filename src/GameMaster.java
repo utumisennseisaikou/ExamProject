@@ -14,11 +14,11 @@ public class GameMaster {
             member.showStatus();
         }
         ArrayList<Monster> monsters = new ArrayList<Monster>();
-        Matango matango = new Matango('A', 45);
         Goblin goblin = new Goblin('A', 50);
+        Matango matango = new Matango('A', 45);
         Slime slime = new Slime('A', 40);
-        monsters.add(matango);
         monsters.add(goblin);
+        monsters.add(matango);
         monsters.add(slime);
         System.out.println("---敵グループ---");
         for (Monster member : monsters) {

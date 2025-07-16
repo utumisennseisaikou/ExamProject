@@ -1,5 +1,5 @@
 public class Wizard extends Character{
-    public int mp;
+    private int mp;
     Wizard(String name, int hp, int mp) {
         super(name, hp);
         this.mp = mp;
